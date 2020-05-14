@@ -73,3 +73,18 @@ Python via Anaconda
 - Figure out logic to extract alternate forms and have them ready in another dataframe, if needed
 
 - Figure out logic to depict type matchup advantage/disadvantage
+
+
+# 2020.05.13 
+
+## Wishlist
+1. User inputs the Pokedex number
+2. Function parses the dataframe to find the Pokemon with that index in the Pokedex
+    - User inputs 1, the dataframe should find Bulbasaur
+3. Incorporate the damage modifier and find Pokemon that the input Pokemon is good against, bad against, neutral?
+    - Check how stats are implemented to calculate damage
+        - Thought: it was 2 x Atk * typing (Same Type Attack Bonus, STAB) * move power - Def of the defending Pokemon
+        - In this case, the dataset is missing the library of moves, so we cannot determine the actual move power or move typing. This makes us unable to use the true power to calcuate damage or factor in STAB. In lieu of these stats, we will assume the same move power for each Pokemon, and assume that the move will have STAB applied.
+        - How do we factor in dual types?
+        
+    - Ignore abilities, held items, direct damage for this MVP
