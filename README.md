@@ -86,5 +86,11 @@ Python via Anaconda
         - Thought: it was 2 x Atk * typing (Same Type Attack Bonus, STAB) * move power - Def of the defending Pokemon
         - In this case, the dataset is missing the library of moves, so we cannot determine the actual move power or move typing. This makes us unable to use the true power to calcuate damage or factor in STAB. In lieu of these stats, we will assume the same move power for each Pokemon, and assume that the move will have STAB applied.
         - How do we factor in dual types?
-        
+
     - Ignore abilities, held items, direct damage for this MVP
+
+## For next time
+- Prework is to code in the rough logic
+- Show results of prework
+- Update repos
+- Add equation for damage to get results
